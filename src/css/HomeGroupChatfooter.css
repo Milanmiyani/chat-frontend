@@ -1,0 +1,131 @@
+.footer-input-container {
+
+  position: fixed;
+  bottom: 0;
+  gap:10px;
+  width: 100%;
+ 
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.footer-input-container .message-box {
+  display: flex;
+  align-items: center;
+  background-color: #d9ecef;
+  border: 1px solid #438E96;
+  border-radius: 8px;
+  padding: 8px 12px;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.footer-input-container .message-box .message-input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  margin: 0 10px;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+}
+
+.footer-input-container .send-button {
+  background-color: #4e9ca9;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-input-container .send-button img {
+  height: 20px;
+  width: 20px;
+}
+
+
+/*full screen image view in css*/
+.fullscreen-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 9999;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.image-scroll-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-scroll-container img {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Send button pinned to bottom */
+.fullscreen-send-button {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .image-scroll-container {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .fullscreen-send-button {
+    padding: 12px 16px;
+    font-size: 15px;
+    width: 95%;
+  }
+
+  .image-scroll-container img {
+    max-height: 70vh;
+    border-radius: 8px;
+  }
+}
+

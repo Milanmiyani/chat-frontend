@@ -1,0 +1,307 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*form all input css*/
+.All-GroupChat {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+.GroupChat-info {
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.GroupChat-info h1 {
+  color: #438E96;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  font-family: 'Cherry Swash', cursive;
+  margin-bottom: 10px;
+}
+
+.GroupChat-info p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 30px;
+  font-family: 'Exo', sans-serif;
+}
+
+.Groupchat-from label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3B757F;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 2px;
+  margin-top:10px;
+}
+
+
+/* Style for all select dropdowns */
+.Groupchat-from select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.41.59L6 5.17l4.59-4.58L12 2l-6 6-6-6z' fill='%233B757F'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px 8px;
+  padding-right: 30px; /* make space for arrow */
+  width: 100%;
+  padding: 14px 12px;
+  font-size: 14px;
+  font-family: 'Exo', sans-serif;
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #3B757F;
+  margin-top: -10px;
+}
+
+
+.Groupchat-from input{
+  width: 100%;
+  padding: 14px 12px;
+  font-size: 14px;
+  font-family: 'Exo', sans-serif;
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #3B757F;
+  margin-top: -20px;
+}
+.Groupchat-from textarea {
+  width: 100%;
+  padding: 14px 12px;
+  font-size: 14px;
+  font-family: 'Exo', sans-serif;
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #3B757F;
+  margin-top: -20px;
+}
+.Groupchat-from #phone{
+  width: 100%;
+  padding: 18px 45px;
+  font-size: 14px;
+  font-family: 'Exo', sans-serif;
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  margin-bottom: -20px;
+  background-color: #fff;
+  color: #3B757F;
+}
+.Groupchat-from textarea {
+  resize: vertical;
+}
+.Groupchat-from #date {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-image: url("../assets/image/calendar-icon.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.Groupchat-from .btn-createaccount {
+  padding: 14px;
+  background-color: #438E96;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.Groupchat-from .btn-createaccount:hover {
+  background-color: #376f78;
+}
+
+/* Gender radio section */
+.Groupchat-from .gender-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px 0 20px;
+  width: 100%;
+  justify-self: center;
+}
+
+.Groupchat-from .gender-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #3B757F;
+  font-family: 'Exo', sans-serif;
+  white-space: nowrap;
+  padding: 8px 12px;
+
+  border-radius: 8px;
+  flex: 1;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.Groupchat-from .gender-group input {
+  margin: 0;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Hover and active states */
+.Groupchat-from .gender-group label:hover {
+  border-color: #438E96;
+  background-color: #f5f5f5;
+}
+
+.Groupchat-from .gender-group input:checked + span {
+  color: #438E96;
+  font-weight: 600;
+}
+
+/* error in css */
+.Groupchat-from  .error {
+  color: #dc3545;
+  font-size: 12px;
+  margin: -8px 0 10px 2px;
+  font-family: 'Exo', sans-serif;
+  text-align: left;
+  animation: fadeIn 0.3s ease-in;
+}
+ 
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .GroupChat-info {
+    padding: 15px;
+  }
+
+  .Groupchat-from input,
+  .Groupchat-from select,
+  .Groupchat-from textarea {
+    padding: 14px 10px;
+  }
+
+  .Groupchat-from .btn-createaccount {
+    padding: 12px;
+  }
+
+  .Groupchat-from .gender-group {
+    gap: 8px;
+  }
+  
+  .Groupchat-from .gender-group label {
+    padding: 8px 8px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .Groupchat-from .gender-group {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .Groupchat-from .gender-group label {
+    flex: 1 1 calc(20% - 40px);
+    padding: 8px;
+    font-size: 12px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .GroupChat-info h1 {
+    font-size: 25px;
+  }
+
+  .Groupchat-from input,
+  .Groupchat-from select,
+  .Groupchat-from textarea {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 390px) {
+  .GroupChat-info h1 {
+    font-size: 24px;
+  }
+
+  .Groupchat-from input,
+  .Groupchat-from select,
+  .Groupchat-from textarea {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .GroupChat-info h1 {
+    font-size: 25px;
+  }
+
+  .Groupchat-from input,
+  .Groupchat-from select,
+  .Groupchat-from textarea {
+    font-size: 12px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .Groupchat-from .gender-group label {
+    flex: 1 1 calc(10% - 00px);
+    padding: 8px;
+    font-size: 12px;
+    justify-content: flex-start;
+  }
+}
+  .loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .spin-icon {
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .btn-createaccount:disabled {
+    background-color: #376f78;
+    cursor: not-allowed;
+  }

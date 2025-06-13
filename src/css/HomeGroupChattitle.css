@@ -1,0 +1,48 @@
+/* HomeGroupChattitle.css */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Group-titles-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* make sure it's above everything */
+  background-color: #438E96;
+}
+
+.GroupTitle {
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title-info h1 {
+  color: #ffffff;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.title-info p {
+  color: #ffffff;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  padding: 0px 5px;
+}
+
+.title img {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+}
